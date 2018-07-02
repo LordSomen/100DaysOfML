@@ -117,3 +117,63 @@ passenger_train_var
 #%%
 passenger_prepared = full_pipeline.fit_transform(passenger_train_var)
 passenger_prepared
+
+#%%
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import cross_val_predict
+forest_clf = RandomForestClassifier(random_state=42)
+y_probas_forest = cross_val_predict(forest_clf, passenger_prepared, passenger_train_label, cv=3,
+method="predict_proba")
+y_probas_forest
+
+#%%
+from sklearn.metrics import roc_auc_score
+y_scores_forest = y_probas_forest[:, 1]
+roc_auc_score(passenger_train_label, y_scores_forest)
+#%%
+forest_clf.fit(passenger_prepared,passenger_train_label)
+forest_clf.predict(passenger_prepared[800])
+
+#%%
+passenger_test_var = passenger_test
+passenger_test_var = passenger_test_var.drop("Name",axis = 1)
+passenger_test_var = passenger_test_var.drop("Cabin",axis = 1)
+passenger_test_var = passenger_test_var.drop("Ticket",axis = 1)
+passenger_test_var = passenger_test_var.drop("PassengerId",axis = 1)
+passenger_test_var = passenger_test_var.drop("Embarked",axis = 1)
+passenger_test_var
+
+#%%
+passenger_prepared_test = full_pipeline.fit_transform(passenger_test_var)
+
+final_result = forest_clf.predict(passenger_prepared_test)
+final_result 
+
+#%%
+final_result_list = final_result.tolist()
+final_result_list
+
+#%%
+passenger_id = passenger_test["PassengerId"].copy()
+passenger_id_list = passenger_id.tolist()
+passenger_id_list
+
+#%%
+final_result_combined_list = []
+for i,j in zip(passenger_id_list,final_result_list):
+    final_result_combined_list.append([i,j])
+final_result_combined_list
+
+#%%
+import csv
+csv_file = "/home/soumyajit/Codes/DL/100DaysOfML/Kaggle/Titanic/test_result.csv"
+# with open(csv_file, "w") as output:
+#     writer = csv.writer(output)
+with open(csv_file, "w" , newline='') as output:
+    writer = csv.writer(output)
+    writer.writerow(["PassengerId","Survived"])
+    writer.writerows(final_result_combined_list)
+
+#the score is 0.73684 
+
+

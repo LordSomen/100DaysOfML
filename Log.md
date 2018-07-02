@@ -16,7 +16,7 @@
 **Link of Work:**   [Commit](https://github.com/LordSomen/100DaysOfML/commit/a09148256d1561f5f9e5544ff3f64aacf0d24f43)
 
 
-## Day 1 : Jul 2 , 2018
+## Day 2 : Jul 2 , 2018
 
 **Today's Progress** : I have completed initial training and testing of the model and submitted to the Kaggle . 
 

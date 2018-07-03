@@ -24,4 +24,11 @@
 
 **Link of Work:**  [Commit](https://github.com/LordSomen/100DaysOfML/commit/5cf906d86324c52dbd90896a57ee951befdcf0e3)
 
+## Day 3 : Jul 3 , 2018
+
+**Today's Progress** : I have completed Google ML crash course upto reduce data loss .
+
+**Thoughts** : The course is really good and it contain lots of good contents . It is good for a beginner .
+
+**Link of Work:** [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course/first-steps-with-tensorflow/video-lecture)
 

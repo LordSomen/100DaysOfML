@@ -32,3 +32,10 @@
 
 **Link of Work:** [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course/first-steps-with-tensorflow/video-lecture)
 
+## Day 4 : Jul 4 , 2018
+
+**Today's Progress** : I have done more of Google ML crash course .
+
+**Thoughts** : The programing exercises are good.
+
+**Link of Work:** [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course/first-steps-with-tensorflow/video-lecture)

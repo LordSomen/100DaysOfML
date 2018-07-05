@@ -39,3 +39,11 @@
 **Thoughts** : The programing exercises are good.
 
 **Link of Work:** [Google ML Crash Course](https://developers.google.com/machine-learning/crash-course/first-steps-with-tensorflow/video-lecture)
+
+## Day 5 : Jul 5 , 2018
+
+**Today's Progress** : I have implemented Linear regression model algorithm from scratch and used it to prediction .
+
+**Thoughts** : The builtin tools or models we use are also just algorithms , they are not any rocket science , learning ML become more fun when these algorithms are implemented from scratch , it was really a great experience .
+
+**Link of Work:** [Commit](https://github.com/LordSomen/100DaysOfML/commit/09b4a0dd0c14c96b2a9e8c377319773ac5ce6ef3)

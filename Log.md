@@ -47,3 +47,11 @@
 **Thoughts** : The builtin tools or models we use are also just algorithms , they are not any rocket science , learning ML become more fun when these algorithms are implemented from scratch , it was really a great experience .
 
 **Link of Work:** [Commit](https://github.com/LordSomen/100DaysOfML/commit/09b4a0dd0c14c96b2a9e8c377319773ac5ce6ef3)
+
+## Day 6 : Jul 6 , 2018
+
+**Today's Progress** : Learned about Gradient descent algorithm and its equations .
+
+**Thoughts** : the concepts are really good .
+
+**Link of Work:** [Siraj's Gradient descent](https://www.youtube.com/watch?v=XdM6ER7zTLk)

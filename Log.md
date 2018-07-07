@@ -55,3 +55,11 @@
 **Thoughts** : the concepts are really good .
 
 **Link of Work:** [Siraj's Gradient descent](https://www.youtube.com/watch?v=XdM6ER7zTLk)
+
+## Day 7 : Jul 7 , 2018
+
+**Today's Progress** : Learned and Implemented Gradient descent algorithm, Stochastic grad descent, mini batch , polynomial  .
+
+**Thoughts** : the concepts are really good .
+
+**Link of Work:** [Commit](https://github.com/LordSomen/100DaysOfML/commit/b89834deaccb9e28b741791d5e070d5cda64289e)

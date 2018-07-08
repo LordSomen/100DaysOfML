@@ -63,3 +63,11 @@
 **Thoughts** : the concepts are really good .
 
 **Link of Work:** [Commit](https://github.com/LordSomen/100DaysOfML/commit/b89834deaccb9e28b741791d5e070d5cda64289e)
+
+## Day 8 : Jul 8 , 2018
+
+**Today's Progress** : Learned and Implemented Learning curves .
+
+**Thoughts** : learning curves are really helpful in determining  a model is overfiting or underfiting .
+
+**Link of Work:** [Learning Curve](https://github.com/LordSomen/100DaysOfML/commit/a015d04c26b0ce2ca9bee2b502027573e931b088)

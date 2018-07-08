@@ -96,3 +96,32 @@ lin_reg = LinearRegression()
 lin_reg.fit(X_poly,Y_p)
 print(lin_reg.intercept_ , lin_reg.coef_)
 
+#%%
+from sklearn.metrics import mean_squared_error
+from sklearn.model_selection import train_test_split
+
+def plot_learning_curves(model,X,Y):
+    X_train,X_val,Y_train,Y_val = train_test_split(X,Y,test_size=0.2)
+    train_error,val_error = [],[]
+    for m in range(1,len(X_train)):
+        model.fit(X_train[:m],Y_train[:m])
+        Y_train_predict = model.predict(X_train[:m])
+        Y_val_predict = model.predict(X_val)
+        train_error.append(mean_squared_error(Y_train[:m],Y_train_predict))
+        val_error.append(mean_squared_error(Y_val,Y_val_predict))
+    plt.plot(np.sqrt(train_error), "r-+", linewidth=2, label="train")
+    plt.plot(np.sqrt(val_error), "b-", linewidth=3, label="val")
+
+lin_reg = LinearRegression()
+plot_learning_curves(lin_reg, X_p, Y_p)
+
+#%%
+from sklearn.pipeline import Pipeline
+polynomial_regression = Pipeline((
+("poly_features", PolynomialFeatures(degree=10, include_bias=False)),
+("sgd_reg", LinearRegression()),
+))
+plot_learning_curves(polynomial_regression, X_p, Y_p)
+
+
+

@@ -71,3 +71,11 @@
 **Thoughts** : learning curves are really helpful in determining  a model is overfiting or underfiting .
 
 **Link of Work:** [Learning Curve](https://github.com/LordSomen/100DaysOfML/commit/a015d04c26b0ce2ca9bee2b502027573e931b088)
+
+## Day 9 : Jul 9 , 2018
+
+**Today's Progress** : Learned and Implemented Ridge regression , L2 norm , L1 Norm  .
+
+**Thoughts** : Regularization is a great tool for making a Model dumb(i.e putting some constraints).
+
+**Link of Work:** [Ridge regression](https://github.com/LordSomen/100DaysOfML/commit/4b23a7d26b58324488ab54a68a245e6a9d557447)

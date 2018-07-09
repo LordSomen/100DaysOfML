@@ -123,5 +123,21 @@ polynomial_regression = Pipeline((
 ))
 plot_learning_curves(polynomial_regression, X_p, Y_p)
 
+#%%
+'''
+this is the implementation of ridge regression 
+'''
+from sklearn.linear_model import Ridge
+ridge_model = Ridge(alpha= 1 , solver="cholesky")
+ridge_model.fit(X_p,Y_p)
+ridge_model.predict([[1.5]])
+
+#%%
+from sklearn.linear_model import SGDRegressor
+sgd_reg = SGDRegressor(penalty="l2")
+sgd_reg.fit(X, Y.ravel())
+sgd_reg.predict([[1.5]])
+
+
 
 

@@ -79,3 +79,11 @@
 **Thoughts** : Regularization is a great tool for making a Model dumb(i.e putting some constraints).
 
 **Link of Work:** [Ridge regression](https://github.com/LordSomen/100DaysOfML/commit/4b23a7d26b58324488ab54a68a245e6a9d557447)
+
+## Day 10 : Jul 10 , 2018
+
+**Today's Progress** : Learned and Implemented Logistic regression .
+
+**Thoughts** : Lots and Lots of math equation .
+
+**Link of Work:** [Logistic regression](https://github.com/LordSomen/100DaysOfML/commit/bf5724caa49e6e4a3977f54421245f7e1ec2afe0)

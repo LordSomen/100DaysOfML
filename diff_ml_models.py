@@ -135,9 +135,63 @@ ridge_model.predict([[1.5]])
 #%%
 from sklearn.linear_model import SGDRegressor
 sgd_reg = SGDRegressor(penalty="l2")
-sgd_reg.fit(X, Y.ravel())
+sgd_reg.fit(X_p, Y_p.ravel())
 sgd_reg.predict([[1.5]])
 
+#%%
+''' 
+this is a implementation of the Lasso Regression
+'''
+from sklearn.linear_model import Lasso
+lasso_reg = Lasso(alpha=0.1)
+lasso_reg.fit(X_p,Y_p)
+lasso_reg.predict([[1.5]])
+
+#%%
+''' 
+this is a implementation of the Elastic net
+'''
+from sklearn.linear_model import ElasticNet
+elastic_net = ElasticNet(alpha=0.1,l1_ratio=0.5)
+elastic_net.fit(X_p,Y_p)
+elastic_net.predict([[1.5]])
+
+#%%
+'''
+this is the implementation of a simple Logistic regression
+'''
+from sklearn import datasets
+iris = datasets.load_iris()
+list(iris.keys())
+
+#%%
+X = iris["data"][:, 3:] # petal width
+X
+#%%
+Y = (iris["target"] == 2).astype(np.int) # 1 if Iris-Virginica, else 0
+Y
+
+#%%
+from sklearn.linear_model import LogisticRegression
+log_reg = LogisticRegression()
+log_reg.fit(X, Y)
+
+#%%
+X_new = np.linspace(0, 3, 1000).reshape(-1, 1)
+y_proba = log_reg.predict_proba(X_new)
+plt.plot(X_new, y_proba[:, 1], "g-", label="Iris-Virginica")
+plt.plot(X_new, y_proba[:, 0], "b--", label="Not Iris-Virginica")
+
+#%%
+'''
+this is the implementation of a softmax regression
+'''
+X = iris["data"][:, (2, 3)]
+y = iris["target"]
+softmax_reg = LogisticRegression(multi_class="multinomial",solver="lbfgs", C=10)
+softmax_reg.fit(X, Y)
+print(softmax_reg.predict([[5, 2]]))
+print(softmax_reg.predict_proba([[5, 2]]))
 
 
 

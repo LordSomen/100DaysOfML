@@ -87,3 +87,11 @@
 **Thoughts** : Lots and Lots of math equation .
 
 **Link of Work:** [Logistic regression](https://github.com/LordSomen/100DaysOfML/commit/bf5724caa49e6e4a3977f54421245f7e1ec2afe0)
+
+## Day 11 : Jul 11 , 2018
+
+**Today's Progress** : Learned Linear Algebra and it is continuing.
+
+**Thoughts** : Having a good concept building in Maths is very important in ML .
+
+**Link of Work:** [Linear Algebra](https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)

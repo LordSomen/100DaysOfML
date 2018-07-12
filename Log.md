@@ -95,3 +95,11 @@
 **Thoughts** : Having a good concept building in Maths is very important in ML .
 
 **Link of Work:** [Linear Algebra](https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+
+## Day 12 : Jul 12 , 2018
+
+**Today's Progress** : Continued Learning Linear Algebra .
+
+**Thoughts** : Having a good concept building in Maths is very important in ML .
+
+**Link of Work:** [Linear Algebra](https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)

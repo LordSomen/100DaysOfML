@@ -103,3 +103,11 @@
 **Thoughts** : Having a good concept building in Maths is very important in ML .
 
 **Link of Work:** [Linear Algebra](https://www.youtube.com/watch?v=kjBOesZCoqc&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+
+## Day 13 : Jul 13 , 2018
+
+**Today's Progress** : Learned linear algebra and started with SVM.
+
+**Thoughts** : Support vector machine is pretty amazing .
+
+**Link of Work:** [SVM](https://github.com/LordSomen/100DaysOfML/commit/1d4a7f2b137f4051325b1d90119e14f78cdc9847)

@@ -111,3 +111,11 @@
 **Thoughts** : Support vector machine is pretty amazing .
 
 **Link of Work:** [SVM](https://github.com/LordSomen/100DaysOfML/commit/1d4a7f2b137f4051325b1d90119e14f78cdc9847)
+
+## Day 14 : Jul 14 , 2018
+
+**Today's Progress** : continued with Linear algebra and SVM .
+
+**Thoughts** : Gaining more and more insights , understanding more and more how deep these concepts are .
+
+**Link of Work:** [SVM](https://github.com/LordSomen/100DaysOfML/commit/e47a8a5be33ed1ca187fd34e0fd2aa6521a80fe0)

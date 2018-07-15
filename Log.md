@@ -119,3 +119,13 @@
 **Thoughts** : Gaining more and more insights , understanding more and more how deep these concepts are .
 
 **Link of Work:** [SVM](https://github.com/LordSomen/100DaysOfML/commit/e47a8a5be33ed1ca187fd34e0fd2aa6521a80fe0)
+
+## Day 15 : Jul 15 , 2018
+
+**Today's Progress** : continued with SVM , started with SVM kernel.
+
+**Thoughts** : Kernel trick is really a tricky concept . Have to read more of it . And again math is very much important for ML.
+
+**Link of Work:** [SVM-kernel](https://github.com/LordSomen/100DaysOfML/commit/8f6838ec7b01bac5a8ba4d32f20145971d61f57f)
+
+

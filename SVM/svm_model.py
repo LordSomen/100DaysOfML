@@ -57,3 +57,14 @@ rbf_kernel_svm_clf = Pipeline((
 ))
 rbf_kernel_svm_clf.fit(X,Y)
 
+#%%
+from sklearn.svm import LinearSVR
+svm_reg = LinearSVR(epsilon=1.5)
+svm_reg.fit(X,Y)
+
+#%%
+from sklearn.svm import SVR
+svm_poly_reg = SVR(kernel="poly",degree=2,epsilon=0.01,C=100)
+svm_poly_reg.fit(X,Y)
+
+

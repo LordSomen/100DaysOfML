@@ -128,4 +128,12 @@
 
 **Link of Work:** [SVM-kernel](https://github.com/LordSomen/100DaysOfML/commit/8f6838ec7b01bac5a8ba4d32f20145971d61f57f)
 
+## Day 16 : Jul 16 , 2018
+
+**Today's Progress** : continued with SVM regression .
+
+**Thoughts** : the concept of svm is really tricky .
+
+**Link of Work:** [SVM-Regression](https://github.com/LordSomen/100DaysOfML/commit/ef4b95ef4d618904a71867b87b29161d3ff8b4b9)
+
 

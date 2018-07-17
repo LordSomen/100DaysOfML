@@ -137,3 +137,10 @@
 **Link of Work:** [SVM-Regression](https://github.com/LordSomen/100DaysOfML/commit/ef4b95ef4d618904a71867b87b29161d3ff8b4b9)
 
 
+## Day 17 : Jul 17 , 2018
+
+**Today's Progress** : Revised SVM concepts
+
+**Thoughts** : the concept of svm is really complex
+
+**Link of Work:** [SVM-Note](http://web.mit.edu/6.034/wwwbob/svm-notes-long-08.pdf)

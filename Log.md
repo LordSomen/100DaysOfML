@@ -144,3 +144,11 @@
 **Thoughts** : the concept of svm is really complex
 
 **Link of Work:** [SVM-Note](http://web.mit.edu/6.034/wwwbob/svm-notes-long-08.pdf)
+
+## Day 18 : Jul 18 , 2018
+
+**Today's Progress** : Get started with one of the most important concept of ML Decision trees.
+
+**Thoughts** : Decision trees are very efficient algorithm , hoping to learn a lot .
+
+**Link of Work:** [Decision Tree 1](https://github.com/LordSomen/100DaysOfML/commit/7840457267f2ed38aac6b3fe7bfe276e03f887a6)

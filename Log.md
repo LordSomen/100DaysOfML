@@ -152,3 +152,11 @@
 **Thoughts** : Decision trees are very efficient algorithm , hoping to learn a lot .
 
 **Link of Work:** [Decision Tree 1](https://github.com/LordSomen/100DaysOfML/commit/7840457267f2ed38aac6b3fe7bfe276e03f887a6)
+
+## Day 19 : Jul 19 , 2018
+
+**Today's Progress** : Learned more about concepts of ML Decision trees.
+
+**Thoughts** : Decision tree can be visualized easily that is why they are great , also they are sensitive to the data , chance of overfiting if hyperparameters are not used properly .
+
+**Link of Work:** [Decision Tree 2](https://github.com/LordSomen/100DaysOfML/commit/76e9808329f6632d36146fd11e297fdaec403477)

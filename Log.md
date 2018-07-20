@@ -160,3 +160,11 @@
 **Thoughts** : Decision tree can be visualized easily that is why they are great , also they are sensitive to the data , chance of overfiting if hyperparameters are not used properly .
 
 **Link of Work:** [Decision Tree 2](https://github.com/LordSomen/100DaysOfML/commit/76e9808329f6632d36146fd11e297fdaec403477)
+
+## Day 20 : Jul 20 , 2018
+
+**Today's Progress** : Played with moons dataset of sklearn just practicing different concepts.
+
+**Thoughts** : Coding is the real love .
+
+**Link of Work:** [Decision Tree 3](https://github.com/LordSomen/100DaysOfML/commit/f22bab90c5e2ee32a9a57021a89d4f04c59c2e73)

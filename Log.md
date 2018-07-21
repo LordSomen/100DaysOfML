@@ -168,3 +168,11 @@
 **Thoughts** : Coding is the real love .
 
 **Link of Work:** [Decision Tree 3](https://github.com/LordSomen/100DaysOfML/commit/f22bab90c5e2ee32a9a57021a89d4f04c59c2e73)
+
+## Day 21 : Jul 21 , 2018
+
+**Today's Progress** : Continued with that dataset , tweak some hyperparameter and get the 87% accuracy on a decision tree.
+
+**Thoughts** : Getting used to the process of ML , less coding more thinking loving it.
+
+**Link of Work:** [Decision Tree 4](https://github.com/LordSomen/100DaysOfML/commit/73540e9242cf824f3b35af62deef4c9cdf7678d9)

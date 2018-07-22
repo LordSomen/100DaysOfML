@@ -176,3 +176,11 @@
 **Thoughts** : Getting used to the process of ML , less coding more thinking loving it.
 
 **Link of Work:** [Decision Tree 4](https://github.com/LordSomen/100DaysOfML/commit/73540e9242cf824f3b35af62deef4c9cdf7678d9)
+
+## Day 22 : Jul 22 , 2018
+
+**Today's Progress** : started with ensemble learning.
+
+**Thoughts** : concepts are really good.
+
+**Link of Work:** [Ensemble Learning](https://github.com/LordSomen/100DaysOfML/commit/60fc8397a2877ea2323bea1cb49cb247e6970e6b)

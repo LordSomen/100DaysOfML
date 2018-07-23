@@ -34,3 +34,18 @@ for clf in (log_clf, rand_clf, svc_clf, vote_clf):
     clf.fit(X_train, Y_train)
     Y_pred = clf.predict(X_test)
     print(clf.__class__.__name__, accuracy_score(Y_test, Y_pred))
+
+#%%
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import BaggingClassifier
+
+bag_clf = BaggingClassifier(DecisionTreeClassifier(),
+            n_estimators=500,
+            max_samples=100,bootstrap=False,n_jobs=1)
+
+bag_clf.fit(X_train,Y_train)
+
+#%%
+prediction = bag_clf.predict(X_test)
+print(accuracy_score(Y_test,prediction))
+

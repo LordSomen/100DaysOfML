@@ -184,3 +184,11 @@
 **Thoughts** : concepts are really good.
 
 **Link of Work:** [Ensemble Learning](https://github.com/LordSomen/100DaysOfML/commit/60fc8397a2877ea2323bea1cb49cb247e6970e6b)
+
+## Day 23 : Jul 23 , 2018
+
+**Today's Progress** : Learned about concept of bagging and pasting.
+
+**Thoughts** : good concepts.
+
+**Link of Work:** [Ensemble Learning-2](https://github.com/LordSomen/100DaysOfML/commit/eb7018cd452d90aef33ec5910ca33dcb1fcd3cfe)

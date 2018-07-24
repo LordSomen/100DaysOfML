@@ -14,6 +14,8 @@ print(X_train)
 print(Y_train)
 
 #%%
+''' voting classifier'''
+
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
@@ -36,6 +38,7 @@ for clf in (log_clf, rand_clf, svc_clf, vote_clf):
     print(clf.__class__.__name__, accuracy_score(Y_test, Y_pred))
 
 #%%
+''' bagging and pasting'''
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import BaggingClassifier
 
@@ -48,4 +51,13 @@ bag_clf.fit(X_train,Y_train)
 #%%
 prediction = bag_clf.predict(X_test)
 print(accuracy_score(Y_test,prediction))
+
+#%%
+'''out of bag evaluation'''
+bag_clf = BaggingClassifier(DecisionTreeClassifier(),
+            n_estimators=500,
+            max_samples=100,bootstrap=True,n_jobs=-1,
+            oob_score=True)
+bag_clf.fit(X_train,Y_train)
+print(bag_clf.oob_score_)
 

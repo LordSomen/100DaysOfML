@@ -192,3 +192,11 @@
 **Thoughts** : good concepts.
 
 **Link of Work:** [Ensemble Learning-2](https://github.com/LordSomen/100DaysOfML/commit/eb7018cd452d90aef33ec5910ca33dcb1fcd3cfe)
+
+## Day 24 : Jul 24 , 2018
+
+**Today's Progress** : Learned about out of bag evaluation and using it for validation of model.
+
+**Thoughts** : ensemble learning is a beauty.
+
+**Link of Work:** [Ensemble Learning-3](https://github.com/LordSomen/100DaysOfML/commit/5bb4511f167adcf1548808cd68e10f240d6f433a)

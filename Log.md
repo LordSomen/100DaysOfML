@@ -200,3 +200,11 @@
 **Thoughts** : ensemble learning is a beauty.
 
 **Link of Work:** [Ensemble Learning-3](https://github.com/LordSomen/100DaysOfML/commit/5bb4511f167adcf1548808cd68e10f240d6f433a)
+
+## Day 25 : Jul 25 , 2018
+
+**Today's Progress** : Learned about random forest classifier.
+
+**Thoughts** : very good concepts.
+
+**Link of Work:** [Ensemble Learning-4](https://github.com/LordSomen/100DaysOfML/commit/b464b3e9780a961b23143be9a664125d21f60fff)

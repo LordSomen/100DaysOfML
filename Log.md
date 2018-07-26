@@ -208,3 +208,11 @@
 **Thoughts** : very good concepts.
 
 **Link of Work:** [Ensemble Learning-4](https://github.com/LordSomen/100DaysOfML/commit/b464b3e9780a961b23143be9a664125d21f60fff)
+
+## Day 26 : Jul 26 , 2018
+
+**Today's Progress** : Learned about adaptive boosting.
+
+**Thoughts** : ensemble learning is full of concepts.
+
+**Link of Work:** [Ensemble Learning-5](https://github.com/LordSomen/100DaysOfML/commit/88ea1c8b60d7c9ce2faff23aa9c263249c6e11f9)

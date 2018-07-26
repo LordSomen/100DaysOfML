@@ -85,3 +85,12 @@ rnd_clf = RandomForestClassifier(n_estimators=500, n_jobs=-1)
 rnd_clf.fit(iris["data"], iris["target"])
 for name, score in zip(iris["feature_names"], rnd_clf.feature_importances_):
     print(name, score)
+
+#%%
+'''Adative boostng'''
+from sklearn.ensemble import AdaBoostClassifier
+ada_clf = AdaBoostClassifier(
+DecisionTreeClassifier(max_depth=1), n_estimators=200,
+algorithm="SAMME.R", learning_rate=0.5
+)
+ada_clf.fit(X_train, Y_train)

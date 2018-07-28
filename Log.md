@@ -216,3 +216,11 @@
 **Thoughts** : ensemble learning is full of concepts.
 
 **Link of Work:** [Ensemble Learning-5](https://github.com/LordSomen/100DaysOfML/commit/88ea1c8b60d7c9ce2faff23aa9c263249c6e11f9)
+
+## Day 27 : Jul 27 , 2018
+
+**Today's Progress** : Learned about gradient boosting.
+
+**Thoughts** : ensemble learning is full of concepts.
+
+**Link of Work:** [Ensemble Learning-5](https://github.com/LordSomen/100DaysOfML/commit/00b40d868c9b19024361fa1149588660a8f5a750)

@@ -94,3 +94,67 @@ DecisionTreeClassifier(max_depth=1), n_estimators=200,
 algorithm="SAMME.R", learning_rate=0.5
 )
 ada_clf.fit(X_train, Y_train)
+
+#%%
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.datasets import load_iris
+from sklearn.tree import DecisionTreeClassifier
+
+iris = load_iris()
+X = iris['data'][:,:2]
+Y = iris['target']
+
+tree_reg1 = DecisionTreeRegressor(max_depth=2)
+tree_reg1.fit(X, Y)
+
+#%%
+Y2 = Y - tree_reg1.predict(X)
+tree_reg2 = DecisionTreeRegressor(max_depth=2)
+tree_reg2.fit(X,Y2)
+
+#%%
+Y3 = Y - tree_reg2.predict(X_train)
+tree_reg3 = DecisionTreeRegressor(max_depth=2)
+tree_reg3.fit(X, Y3)
+
+#%%
+Y_pred = sum(tree.predict(X) 
+for tree in (tree_reg1, tree_reg2, tree_reg3))
+print(Y_pred)
+
+#%%
+from sklearn.ensemble import GradientBoostingRegressor
+gbrt = GradientBoostingRegressor(max_depth=2, n_estimators=3, 
+learning_rate=1.0)
+gbrt.fit(X, Y)
+
+#%%
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import mean_squared_error
+
+X_train, X_val, Y_train, Y_val = train_test_split(X, Y)
+gbrt = GradientBoostingRegressor(max_depth=2, n_estimators=120)
+gbrt.fit(X_train, Y_train)
+errors = [mean_squared_error(Y_val, y_pred)
+for y_pred in gbrt.staged_predict(X_val)]
+bst_n_estimators = np.argmin(errors)
+gbrt_best = GradientBoostingRegressor(max_depth=2,n_estimators=bst_n_estimators)
+gbrt_best.fit(X_train, Y_train)
+
+#%%
+gbrt = GradientBoostingRegressor(max_depth=2, warm_start=True)
+min_val_error = float("inf")
+error_going_up = 0
+for n_estimators in range(1, 120):
+    gbrt.n_estimators = n_estimators
+    gbrt.fit(X_train, Y_train)
+    y_pred = gbrt.predict(X_val)
+    val_error = mean_squared_error(Y_val, y_pred)
+    if val_error < min_val_error:
+        min_val_error = val_error
+        error_going_up = 0
+    else:
+        error_going_up += 1
+    if error_going_up == 5:
+        break # early stopping

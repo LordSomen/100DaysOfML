@@ -223,4 +223,11 @@
 
 **Thoughts** : ensemble learning is full of concepts.
 
-**Link of Work:** [Ensemble Learning-5](https://github.com/LordSomen/100DaysOfML/commit/00b40d868c9b19024361fa1149588660a8f5a750)
+**Link of Work:** [Ensemble Learning-6](https://github.com/LordSomen/100DaysOfML/commit/00b40d868c9b19024361fa1149588660a8f5a750)
+
+## Day 28 : Jul 28 , 2018
+
+**Today's Progress** : Learned about stacking in ensemble learning.
+
+**Thoughts** : ensemble learning is full of concepts.
+

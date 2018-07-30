@@ -231,3 +231,10 @@
 
 **Thoughts** : ensemble learning is full of concepts.
 
+## Day 29 : Jul 29 , 2018
+
+**Today's Progress** : revised ensemble learning and started playing with it with MNIST datset.
+
+**Thoughts** : ensemble learning is full of concepts.
+
+**Link of Work:** [Ensemble Learning-7](https://github.com/LordSomen/100DaysOfML/commit/33ccecace1fcf90db9565b528ca83762040695cf)

@@ -238,3 +238,11 @@
 **Thoughts** : ensemble learning is full of concepts.
 
 **Link of Work:** [Ensemble Learning-7](https://github.com/LordSomen/100DaysOfML/commit/33ccecace1fcf90db9565b528ca83762040695cf)
+
+## Day 30 : Jul 30 , 2018
+
+**Today's Progress** : try to train it on RandomTreeClassifier.
+
+**Thoughts** : machine learning is full of surprises.
+
+**Link of Work:** [Ensemble Learning-8](https://github.com/LordSomen/100DaysOfML/commit/bc2aa53b418f463e18f87ab69588d75d519e13df)

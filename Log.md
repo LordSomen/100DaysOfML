@@ -246,3 +246,13 @@
 **Thoughts** : machine learning is full of surprises.
 
 **Link of Work:** [Ensemble Learning-8](https://github.com/LordSomen/100DaysOfML/commit/bc2aa53b418f463e18f87ab69588d75d519e13df)
+
+## Day 31,32 : August 1 , August 2, 2018
+
+**Today's Progress** : Trained SVM , RandomTreeClassifier , ExtraClassifier and also trained the voting cls using the same models , randomTreeClassifier outperform all.
+
+**Thoughts** : Yes RandomTreeClassifier Outperform all but still it needs enough data to perform well.
+and voting classifier is great overall. As you are training and compairing all the models and their results to find a good classifier.
+
+**Link of Work:** [Ensemble Learning -9](https://github.com/LordSomen/100DaysOfML/commit/1ce7c54eb04fd75fb9f3dffd3f35bdfb5a12b1b6)\
+[Ensemble Learning-10](https://github.com/LordSomen/100DaysOfML/commit/495e4b746cef600855e55ce302ed69ff56240e5e)

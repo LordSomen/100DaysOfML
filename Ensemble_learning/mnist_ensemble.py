@@ -35,7 +35,7 @@ rnd_eff = accuracy_score(Y_test,rnd_pred)
 print(rnd_eff)
 print(rnd_clf.score(X_val,Y_val))
 
-#%%
+##%%
 
 from sklearn.svm import SVC
 from sklearn.preprocessing import StandardScaler
@@ -50,17 +50,17 @@ svm_eff = accuracy_score(Y_test,svm_pred)
 print(svm_eff)
 print(svm_clf.score(X_val,Y_val))
 
-#%%
+##%%
 from sklearn.ensemble import ExtraTreesClassifier
 
 extra_trees_clf = ExtraTreesClassifier(random_state=42)
 extra_trees_clf.fit(X_train,Y_train)
 extra_trees_pred = extra_trees_clf.predict(X_test)
 extra_trees_eff = accuracy_score(Y_test,extra_trees_pred)
-print(extra_trees_pred)
+print(extra_trees_eff)
 print(extra_trees_clf.score(X_val,Y_val))
 
-#%%
+##%%
 from sklearn.ensemble import VotingClassifier
 
 vote_clf = VotingClassifier(estimators=[

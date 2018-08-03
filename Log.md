@@ -256,3 +256,10 @@ and voting classifier is great overall. As you are training and compairing all t
 
 **Link of Work:** [Ensemble Learning -9](https://github.com/LordSomen/100DaysOfML/commit/1ce7c54eb04fd75fb9f3dffd3f35bdfb5a12b1b6)\
 [Ensemble Learning-10](https://github.com/LordSomen/100DaysOfML/commit/495e4b746cef600855e55ce302ed69ff56240e5e)
+
+## Day 33 : Aug 3 , 2018
+
+**Today's Progress** : Started learning Dimensionality reduction in ML.
+
+**Thoughts** : reducing runtime is a very important thing in Ml , i.e why learning about Dimensionality reduction is very important.
+

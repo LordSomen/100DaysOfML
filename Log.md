@@ -263,3 +263,10 @@ and voting classifier is great overall. As you are training and compairing all t
 
 **Thoughts** : reducing runtime is a very important thing in Ml , i.e why learning about Dimensionality reduction is very important.
 
+## Day 34,35 : Aug 4 , Aug 5 , 2018
+
+**Today's Progress** : Learned about different aspects of Principle Component analysis in dimension reduction and also how to apply them using sklearn.
+
+**Thoughts** : very good concepts.
+
+**Link of Work:** [Dimensionality Reduction-1](https://github.com/LordSomen/100DaysOfML/commit/94ba415e18c6f883d711d03c443405e645f247f3)

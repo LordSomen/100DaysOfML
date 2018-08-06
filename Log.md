@@ -270,3 +270,11 @@ and voting classifier is great overall. As you are training and compairing all t
 **Thoughts** : very good concepts.
 
 **Link of Work:** [Dimensionality Reduction-1](https://github.com/LordSomen/100DaysOfML/commit/94ba415e18c6f883d711d03c443405e645f247f3)
+
+## Day 36 : Aug 6 , 2018
+
+**Today's Progress** : Learned about Kernel PCA .
+
+**Thoughts** : It's complex.
+
+**Link of Work:** [Ensemble Learning-8](https://github.com/LordSomen/100DaysOfML/commit/7bd4e2e1e56fbc7ec29178afc9ec2f41de3878b7)

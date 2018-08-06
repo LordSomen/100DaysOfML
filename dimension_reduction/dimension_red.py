@@ -48,3 +48,29 @@ X_mnist_reduced = inc_pca.transform(X)
 #%%
 rnd_pca = PCA(n_components=154, svd_solver="randomized")
 X_reduced = rnd_pca.fit_transform(X)
+
+#%%
+from sklearn.decomposition import KernelPCA
+rbf_pca = KernelPCA(n_components = 2, kernel="rbf", gamma=0.02)
+X_reduced = rbf_pca.fit_transform(X)
+
+#%%
+from sklearn.model_selection import GridSearchCV
+from sklearn.linear_model import LogisticRegression
+from sklearn.pipeline import Pipeline
+clf = Pipeline([
+("kpca", KernelPCA(n_components=2)),
+("log_reg", LogisticRegression())
+])
+param_grid = [{
+"kpca__gamma": np.linspace(0.03, 0.05, 10),
+"kpca__kernel": ["rbf", "sigmoid"]
+}]
+grid_search = GridSearchCV(clf, param_grid, cv=3)
+grid_search.fit(X, Y)
+
+#%%
+rbf_pca = KernelPCA(n_components = 2, kernel="rbf", gamma=0.0433,
+fit_inverse_transform=True)
+X_reduced = rbf_pca.fit_transform(X)
+X_preimage = rbf_pca.inverse_transform(X_reduced)

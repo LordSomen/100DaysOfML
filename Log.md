@@ -277,4 +277,10 @@ and voting classifier is great overall. As you are training and compairing all t
 
 **Thoughts** : It's complex.
 
-**Link of Work:** [Ensemble Learning-8](https://github.com/LordSomen/100DaysOfML/commit/7bd4e2e1e56fbc7ec29178afc9ec2f41de3878b7)
+**Link of Work:** [Dimensionality Reduction-2](https://github.com/LordSomen/100DaysOfML/commit/7bd4e2e1e56fbc7ec29178afc9ec2f41de3878b7)
+
+## Day 37 : Aug 7 , 2018
+
+**Today's Progress** : Revised on Dimensionality reduction .
+
+**Thoughts** : It's helps a lot when you revised the ideas , concepts.

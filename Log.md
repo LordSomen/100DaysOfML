@@ -284,3 +284,12 @@ and voting classifier is great overall. As you are training and compairing all t
 **Today's Progress** : Revised on Dimensionality reduction .
 
 **Thoughts** : It's helps a lot when you revised the ideas , concepts.
+
+## Day 38 : Aug 8 , 2018
+
+**Today's Progress** : Compared on the MNIST dataset  by reducing the dataset dimensionality 
+and not reducing it , training RandomForest clf on this 2 datasets .
+
+**Thoughts** : Its turn out that after reducing the dimension of dataset the training time increase twice of trainingtime without the reductio and also accuracy decrease by 2% . It's a surprise but we know the famous  "The Curse Of Dimensonality" always unexpected
+
+**Link of Work:** [Dimensionality Reduction-3](https://github.com/LordSomen/100DaysOfML/commit/5763e00fa0d4455a6b128ff66f332736b77a5a78)

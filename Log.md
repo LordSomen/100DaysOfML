@@ -293,3 +293,13 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 **Thoughts** : Its turn out that after reducing the dimension of dataset the training time increase twice of trainingtime without the reductio and also accuracy decrease by 2% . It's a surprise but we know the famous  "The Curse Of Dimensonality" always unexpected
 
 **Link of Work:** [Dimensionality Reduction-3](https://github.com/LordSomen/100DaysOfML/commit/5763e00fa0d4455a6b128ff66f332736b77a5a78)
+
+## Day 39,40 : Aug 9 , Aug 10 , 2018
+
+**Today's Progress** : 1) get started tensorflow , implemented basic operations of tensorflow .
+2) Implemented more operations and logistic regression using tensorflow.
+
+**Thoughts** : Very much excited on implementing different operations using the most useful and famous tool for ML/AI/DL Tensorflow .
+
+**Link of Work:** [Tensorflow -1](https://github.com/LordSomen/100DaysOfML/commit/bba2df02630730c2f45b03114588c2cfc70bbcb0)
+[Tensorflow -2](https://github.com/LordSomen/100DaysOfML/commit/777961cd5b937b4b51e61014aec49707860dbbb0)

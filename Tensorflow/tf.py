@@ -35,9 +35,8 @@ with tf.Session() as sess:
 
 #%%
 init = tf.global_variables_initializer()
-# prepare an init node
 with tf.Session() as sess:
-    init.run() # actually initialize all the variables
+    init.run() 
     result = f.eval()
     print(result)
 
@@ -48,3 +47,56 @@ result = f.eval()
 print(result)
 sess.close()
 
+#%%
+x1 = tf.Variable(1)
+print(x1.graph is tf.get_default_graph())
+
+#%%
+graph = tf.Graph()
+with graph.as_default():
+    x2 = tf.Variable(2)
+print(x2.graph is graph)
+print(x2.graph is tf.get_default_graph())
+tf.reset_default_graph()
+
+#%%
+w = tf.constant(3)
+x = w + 2
+y = x + 5
+z = x * 3
+with tf.Session() as sess:
+    print(y.eval())
+    print(z.eval())
+
+#%%
+with tf.Session() as sess:
+    y_val,z_val = sess.run([y,z])
+    print(y_val)
+    print(z_val)
+
+#%%
+import numpy as np
+from sklearn.datasets import fetch_california_housing
+housing = fetch_california_housing()
+m,n = housing.data.shape
+print(m,n)
+
+#%%
+housing_data_plus_bias = np.c_[np.ones((m, 1)),
+    housing.data]
+print(housing_data_plus_bias.shape)
+#%%
+X = tf.constant(housing_data_plus_bias, dtype=tf.float32,
+    name="X")
+Y = tf.constant(housing.target.reshape(1,-1),dtype=tf.float32,
+    name='Y')
+Y.shape
+#%%
+XT = tf.transpose(X)
+XT.shape
+#%%
+theta = tf.matmul(tf.matmul(tf.matrix_inverse(tf.matmul(XT, X)),
+ XT), Y)
+with tf.Session() as sess:
+    theta_value = theta.eval()
+    print(theta_value)

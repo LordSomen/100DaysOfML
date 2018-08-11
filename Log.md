@@ -303,3 +303,11 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 
 **Link of Work:** [Tensorflow -1](https://github.com/LordSomen/100DaysOfML/commit/bba2df02630730c2f45b03114588c2cfc70bbcb0)
 [Tensorflow -2](https://github.com/LordSomen/100DaysOfML/commit/777961cd5b937b4b51e61014aec49707860dbbb0)
+
+## Day 41 : Aug 11 , 2018
+
+**Today's Progress** : implemented Gradient Descent using tensorflow.
+
+**Thoughts** : it was fun .
+
+**Link of Work:** [Tensorflow -3](https://github.com/LordSomen/100DaysOfML/commit/096e05abf215d8d442e2d61c8c3b3056c8c5e51e)

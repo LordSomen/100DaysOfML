@@ -311,3 +311,11 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 **Thoughts** : it was fun .
 
 **Link of Work:** [Tensorflow -3](https://github.com/LordSomen/100DaysOfML/commit/096e05abf215d8d442e2d61c8c3b3056c8c5e51e)
+
+## Day 42 : Aug 12 , 2018
+
+**Today's Progress** : Read out a new paper published by DeepMind .
+
+**Thoughts** : It was really progressive thinking on the research of generalization of AI.
+
+**Link of Work:** [Tensorflow -4](http://proceedings.mlr.press/v80/santoro18a/santoro18a.pdf)

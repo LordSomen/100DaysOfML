@@ -318,4 +318,15 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 
 **Thoughts** : It was really progressive thinking on the research of generalization of AI.
 
-**Link of Work:** [Tensorflow -4](http://proceedings.mlr.press/v80/santoro18a/santoro18a.pdf)
+**Link of Work:** [Paper -1](http://proceedings.mlr.press/v80/santoro18a/santoro18a.pdf)
+
+implemented mini -batch gradient descent conecept using tensorflow
+
+## Day 43,44 : Aug 13 , Aug 14 , 2018
+
+**Today's Progress** : 1) Learned more on how to make gradinent descent algo more efficient using tensorflow.
+2) Implemented mini-batch gradient descent.
+
+**Thoughts** : Very much excited on implementing different operations using the most useful and famous tool for ML/AI/DL Tensorflow .
+
+**Link of Work:** [Tensorflow -4](https://github.com/LordSomen/100DaysOfML/commit/af7b01b548bf0bb9814c72cf2b5988c6bbf148f8)

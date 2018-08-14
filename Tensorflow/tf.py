@@ -110,13 +110,46 @@ theta = tf.Variable(tf.random_uniform([n + 1, 1], -1.0, 1.0), name="theta")
 y_pred = tf.matmul(X, theta, name="predictions")
 error = y_pred - y
 mse = tf.reduce_mean(tf.square(error), name="mse")
-gradients = 2/m * tf.matmul(tf.transpose(X), error)
-training_op = tf.assign(theta, theta - learning_rate * gradients)
+# gradients = 2/m * tf.matmul(tf.transpose(X), error)
+# gradients = tf.gradients(mse, [theta])[0]
+# training_op = tf.assign(theta, theta - learning_rate * gradients)
+optimizer = tf.train.GradientDescentOptimizer(learning_rate=learning_rate)
+training_op = optimizer.minimize(mse)
 init = tf.global_variables_initializer()
 with tf.Session() as sess:
     sess.run(init)
-for epoch in range(n_epochs):
-    if epoch % 100 == 0:
-        print("Epoch", epoch, "MSE =", mse.eval())
-sess.run(training_op)
-best_theta = theta.eval()
+
+    for epoch in range(n_epochs):
+        if epoch % 100 == 0:
+            print("Epoch", epoch, "MSE =", mse.eval())
+        sess.run(training_op)
+    best_theta = theta.eval()
+    print(best_theta)
+
+#%%
+A = tf.placeholder(tf.float32, shape=(None, 3))
+B = A + 5
+with tf.Session() as sess:
+    B_val_1 = B.eval(feed_dict={A: [[1, 2, 3]]})
+    B_val_2 = B.eval(feed_dict={A: [[4, 5, 6], [7, 8, 9]]})
+    print(B_val_1)
+    print(B_val_2)
+
+#%%
+X = tf.placeholder(tf.float32, shape=(None, n + 1), name="X")
+y = tf.placeholder(tf.float32, shape=(None, 1), name="y")
+batch_size = 100
+n_batches = int(np.ceil(m / batch_size))
+
+#%%
+def fetch_batch(epoch, batch_index, batch_size):
+     # load the data from disk
+    return X_batch, y_batch
+
+with tf.Session() as sess:
+    sess.run(init)
+    for epoch in range(n_epochs):
+        for batch_index in range(n_batches):
+            X_batch, y_batch = fetch_batch(epoch, batch_index, batch_size)
+            sess.run(training_op, feed_dict={X: X_batch, y: y_batch})
+    best_theta = theta.eval()

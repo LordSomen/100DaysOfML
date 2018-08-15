@@ -153,3 +153,20 @@ with tf.Session() as sess:
             X_batch, y_batch = fetch_batch(epoch, batch_index, batch_size)
             sess.run(training_op, feed_dict={X: X_batch, y: y_batch})
     best_theta = theta.eval()
+
+#%%
+theta = tf.Variable(tf.random_uniform([n + 1, 1], -1.0, 1.0), name="theta")
+init = tf.global_variables_initializer()
+saver = tf.train.Saver()
+with tf.Session() as sess:
+    sess.run(init)
+    for epoch in range(n_epochs):
+        if epoch % 100 == 0: # checkpoint every 100 epochs
+            save_path = saver.save(sess, "/tmp/my_model.ckpt")
+        sess.run(training_op)
+    best_theta = theta.eval()
+    save_path = saver.save(sess, "/tmp/my_model_final.ckpt")
+
+#%%
+with tf.Session() as sess:
+    saver.restore(sess, "/tmp/my_model_final.ckpt")

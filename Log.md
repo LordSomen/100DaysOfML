@@ -330,3 +330,12 @@ implemented mini -batch gradient descent conecept using tensorflow
 **Thoughts** : Very much excited on implementing different operations using the most useful and famous tool for ML/AI/DL Tensorflow .
 
 **Link of Work:** [Tensorflow -4](https://github.com/LordSomen/100DaysOfML/commit/af7b01b548bf0bb9814c72cf2b5988c6bbf148f8)
+
+## Day 45,46 : Aug 15 , Aug 16 , 2018
+
+**Today's Progress** : 1) Learned about how can save your trained model and restore it whenever u need it. This explains how u can use pretrained model using tensorflow  , a great feature
+2) Learned how to use tensorboard . Its a really great tool .
+
+**Thoughts** : Very much excited on implementing different operations using the most useful and famous tool for ML/AI/DL Tensorflow .
+
+**Link of Work:** [Tensorflow -5](https://github.com/LordSomen/100DaysOfML/commit/203d615f813be2314cdc7444a719920d21384e25)

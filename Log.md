@@ -344,3 +344,11 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 
 **Thoughts** : Concepts are good.
 
+## Day 48,49,50 : Aug 18,19,20 , 2018
+
+**Today's Progress** : Read the paper released by google on Tensorflow , it was really awesome and full of deep knowledge and information about tensorlflow , learned a lot .
+
+**Thoughts** : It helped me to clear lots of doubts , and to gain deep insight about tensorflow, everyone who wants to learn tensorflow should take a look at this paper, better than any courses.
+
+**Link of Work:** [Paper-2](http://download.tensorflow.org/paper/whitepaper2015.pdf)
+

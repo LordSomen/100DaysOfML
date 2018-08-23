@@ -352,3 +352,10 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 
 **Link of Work:** [Paper-2](http://download.tensorflow.org/paper/whitepaper2015.pdf)
 
+
+## Day 51,52,53 : Aug 21,22,23 , 2018
+
+**Today's Progress** : revising tensorflow , the concepts are a little tricky.
+
+**Thoughts** : Concepts are good.
+

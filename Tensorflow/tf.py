@@ -102,9 +102,17 @@ with tf.Session() as sess:
     print(theta_value)
 
 #%%
+'''scaling the data for gradient descent'''
+from sklearn.preprocessing import StandardScaler
+scaler  = StandardScaler()
+scaled_housing_data = scaler.fit_transform(housing.data)
+scaled_housing_data_with_bias = np.c_[np.ones((m,1)),scaled_housing_data]
+print(scaled_housing_data_with_bias)
+
+#%%
 n_epochs = 1000
 learning_rate = 0.01
-X = tf.constant(housing_data_plus_bias, dtype=tf.float32, name="X")
+X = tf.constant(scaled_housing_data_with_bias, dtype=tf.float32, name="X")
 y = tf.constant(housing.target.reshape(-1, 1), dtype=tf.float32, name="y")
 theta = tf.Variable(tf.random_uniform([n + 1, 1], -1.0, 1.0), name="theta")
 y_pred = tf.matmul(X, theta, name="predictions")

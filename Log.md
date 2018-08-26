@@ -359,3 +359,10 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 
 **Thoughts** : Concepts are good.
 
+## Day 54,55,56 : Aug 24,25,26 , 2018
+
+**Today's Progress** : Also revising some codes and making some previous code better of tensorflow , understanding more of tensorflow .
+
+**Thoughts** : Tensorflow is kind of complex concept to understand properly , but I will spend some more time on it also because it very much important .
+
+**Link of Work:** [Tensorflow-6](https://github.com/LordSomen/100DaysOfML/commit/cc1909b8eee59c5e118ec60d8e4197ca21fb3d5a)

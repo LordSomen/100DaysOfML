@@ -366,3 +366,12 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 **Thoughts** : Tensorflow is kind of complex concept to understand properly , but I will spend some more time on it also because it very much important .
 
 **Link of Work:** [Tensorflow-6](https://github.com/LordSomen/100DaysOfML/commit/cc1909b8eee59c5e118ec60d8e4197ca21fb3d5a)
+
+## Day 57 : Aug 27 , 2018
+
+**Today's Progress** : Today I learn more about tensor board and also implemented one .
+
+**Thoughts** : It is a handy tool for visualization of the Model .
+
+**Link of Work:** [Tensorflow-7](https://github.com/LordSomen/100DaysOfML/commit/699ebbed8bf7ad3dc888ef4fae570356ba075c84)
+

@@ -375,3 +375,10 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 
 **Link of Work:** [Tensorflow-7](https://github.com/LordSomen/100DaysOfML/commit/699ebbed8bf7ad3dc888ef4fae570356ba075c84)
 
+## Day 58 : Aug 28 , 2018
+
+**Today's Progress** : Today I learn more about how to use namescope in tensorboard .
+
+**Thoughts** : It is a good concept .
+
+**Link of Work:** [Tensorflow-8](https://github.com/LordSomen/100DaysOfML/commit/270d5c802d5d92b8a69859b4897cfa4ae934326d)

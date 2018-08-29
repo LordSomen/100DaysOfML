@@ -376,3 +376,202 @@ print(best_theta)
 #%%
 print(error.op.name)
 print(mse.op.name)
+
+#%%
+''' modularity '''
+n_features = 3
+X = tf.placeholder(tf.float32,shape=(None,n_features),
+name="X")
+w1 = tf.Variable(tf.random_normal((n_features,1)),
+name="weights1")
+w2 = tf.Variable(tf.random_normal((n_features,1)),
+name="weights2")
+b1 = tf.Variable(0.0,name="bias1")
+b2 = tf.Variable(0.0,name="bias2")
+z1 = tf.add(tf.matmul(X,w1),b1,name="z1")
+z2 = tf.add(tf.matmul(X,w2),b2,name="z2")
+
+relu1 = tf.maximum(z1,0.,name="relu1")
+relu2 = tf.maximum(z2,0.,name="relu2")
+
+output = tf.add(relu1,relu2,name="output")
+
+print(output)
+
+#%%
+reset_graph()
+
+def relu(X):
+    w_shape = (int(X.get_shape()[1]),1)
+    w = tf.Variable(tf.random_normal(w_shape),
+    name="weights")
+    b = tf.Variable(0.0,name="bias")
+    z = tf.add(tf.matmul(X,w),b,name="z")
+    return tf.maximum(z,0.,name="relu")
+
+n_features = 3
+X = tf.placeholder(tf.float32,shape=(None,n_features)
+,name="X")
+relus = [relu(X) for i in range(5)]
+output = tf.add_n(relus,name="output")
+print(output)
+#%%
+file_writer = tf.summary.FileWriter("logs/relu1",
+ tf.get_default_graph())
+
+#%%
+reset_graph()
+
+def relu_namescope(X):
+    with tf.name_scope("relu"):
+        w_shape = (int(X.get_shape()[1]),1)
+        w = tf.Variable(tf.random_normal(w_shape),
+        name="weights")
+        b = tf.Variable(0.0,name="bias")
+        z = tf.add(tf.matmul(X,w),b,name="z")
+        return tf.maximum(z,0.,name="max")
+
+#%%
+n_features = 3
+X = tf.placeholder(tf.float32, shape=(None, n_features),
+ name="X")
+relus = [relu_namescope(X) for i in range(5)]
+output = tf.add_n(relus, name="output")
+
+file_writer = tf.summary.FileWriter("logs/relu2",
+ tf.get_default_graph())
+file_writer.close()
+
+#%%
+''' shared variable '''
+reset_graph()
+
+def relu_threshold(X,threshold):
+    with tf.name_scope("relu"):
+        w_shape = (int(X.get_shape()[1]),1)
+        w = tf.Variable(tf.random_normal(w_shape), 
+        name="weights")
+        b = tf.Variable(0.0,name="bias")
+        z = tf.add(tf.matmul(X,w),b,name="z")
+        return tf.maximum(z,threshold,name="max")
+
+threshold = tf.Variable(0.0 , name="threshold")
+X = tf.placeholder(tf.float32,shape=(None,n_features),
+name="X")
+relus = [relu_threshold(X,threshold) for i in range(5)]
+output = tf.add_n(relus,name="output")
+print(output)
+
+#%%
+
+reset_graph()
+def relu(X):
+    with tf.name_scope("relu"):
+        if not hasattr(relu, "threshold"):
+            relu.threshold = tf.Variable(0.0, 
+            name="threshold")
+        w_shape = int(X.get_shape()[1]), 1                          
+        w = tf.Variable(tf.random_normal(w_shape), 
+        name="weights")  
+        b = tf.Variable(0.0, name="bias")                           
+        z = tf.add(tf.matmul(X, w), b, name="z")                    
+        return tf.maximum(z, relu.threshold, name="max")
+
+#%%
+X = tf.placeholder(tf.float32, shape=(None, n_features),
+ name="X")
+relus = [relu(X) for i in range(5)]
+output = tf.add_n(relus, name="output")
+print(output)
+#%%
+reset_graph()
+
+with tf.variable_scope("relu"):
+    threshold = tf.get_variable("threshold", shape=(),
+    initializer=tf.constant_initializer(0.0))
+
+#%%
+with tf.variable_scope("relu", reuse=True):
+    threshold = tf.get_variable("threshold")
+
+#%%
+with tf.variable_scope("relu") as scope:
+    scope.reuse_variables()
+    threshold = tf.get_variable("threshold")
+
+#%%
+reset_graph()
+
+def relu(X):
+    with tf.variable_scope("relu", reuse=True):
+        threshold = tf.get_variable("threshold")
+        w_shape = int(X.get_shape()[1]), 1                         
+        w = tf.Variable(tf.random_normal(w_shape),
+         name="weights")  
+        b = tf.Variable(0.0, name="bias")                           
+        z = tf.add(tf.matmul(X, w), b, name="z")                    
+        return tf.maximum(z, threshold, name="max")
+
+X = tf.placeholder(tf.float32, shape=(None, n_features),
+ name="X")
+with tf.variable_scope("relu"):
+    threshold = tf.get_variable("threshold", shape=(),
+        initializer=tf.constant_initializer(0.0))
+relus = [relu(X) for relu_index in range(5)]
+output = tf.add_n(relus, name="output")
+print(output)
+
+#%%
+file_writer = tf.summary.FileWriter("logs/relu6",
+ tf.get_default_graph())
+file_writer.close()  
+
+#%%
+reset_graph()
+
+def relu(X):
+    with tf.variable_scope("relu"):
+        threshold = tf.get_variable("threshold", shape=(), initializer=tf.constant_initializer(0.0))
+        w_shape = (int(X.get_shape()[1]), 1)
+        w = tf.Variable(tf.random_normal(w_shape),
+         name="weights")
+        b = tf.Variable(0.0, name="bias")
+        z = tf.add(tf.matmul(X, w), b, name="z")
+        return tf.maximum(z, threshold, name="max")
+
+X = tf.placeholder(tf.float32, shape=(None, n_features),
+ name="X")
+with tf.variable_scope("", default_name="") as scope:
+    first_relu = relu(X)     # create the shared variable
+    scope.reuse_variables()  # then reuse it
+    relus = [first_relu] + [relu(X) for i in range(4)]
+output = tf.add_n(relus, name="output")
+
+file_writer = tf.summary.FileWriter("logs/relu8",
+ tf.get_default_graph())
+file_writer.close()
+
+#%%
+reset_graph()
+
+def relu(X):
+    threshold = tf.get_variable("threshold", shape=(),
+         initializer=tf.constant_initializer(0.0))
+    w_shape = (int(X.get_shape()[1]), 1)                        
+    w = tf.Variable(tf.random_normal(w_shape),
+     name="weights")  
+    b = tf.Variable(0.0, name="bias")                           
+    z = tf.add(tf.matmul(X, w), b, name="z")                    
+    return tf.maximum(z, threshold, name="max")
+
+X = tf.placeholder(tf.float32, shape=(None, n_features),
+ name="X")
+relus = []
+for relu_index in range(5):
+    with tf.variable_scope("relu",reuse=(relu_index >= 1)) as scope:
+        relus.append(relu(X))
+output = tf.add_n(relus, name="output")
+
+#%%
+file_writer = tf.summary.FileWriter("logs/relu9", tf.get_default_graph())
+file_writer.close()

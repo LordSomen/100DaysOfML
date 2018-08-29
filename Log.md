@@ -382,3 +382,11 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 **Thoughts** : It is a good concept .
 
 **Link of Work:** [Tensorflow-8](https://github.com/LordSomen/100DaysOfML/commit/270d5c802d5d92b8a69859b4897cfa4ae934326d)
+
+## Day 59 : Aug 29 , 2018
+
+**Today's Progress** : Today I learn more about how to use modularity and shared variable in tensorflow and also implemented them  .
+
+**Thoughts** : It is a good concept .
+
+**Link of Work:** [Tensorflow-9](https://github.com/LordSomen/100DaysOfML/commit/8a5a0ecff4d829817021c6610df239f5f0aa6a40)

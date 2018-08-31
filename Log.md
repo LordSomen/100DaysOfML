@@ -390,3 +390,11 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 **Thoughts** : It is a good concept .
 
 **Link of Work:** [Tensorflow-9](https://github.com/LordSomen/100DaysOfML/commit/8a5a0ecff4d829817021c6610df239f5f0aa6a40)
+
+## Day  60,61: Aug 30,31 , 2018
+
+**Today's Progress** : Dome some exercises on tensorflow from online .
+
+**Thoughts** : Doin exercises really help a lot .
+
+**Link of Work:** [Tensorflow-10](https://github.com/LordSomen/100DaysOfML/commit/3522051886b206caf035af77224ec3d21b3c7d5d)

@@ -398,3 +398,11 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 **Thoughts** : Doin exercises really help a lot .
 
 **Link of Work:** [Tensorflow-10](https://github.com/LordSomen/100DaysOfML/commit/3522051886b206caf035af77224ec3d21b3c7d5d)
+
+## Day 62 : Sep 1 , 2018
+
+**Today's Progress** : Started with Artificial Neural network(ANN) , the most awesome idea since 1943.
+
+**Thoughts** : ANN have been introduced in 1943 , but still we haven't come to half of its successful development. It is the proof of progress in Science can't be on a particular field , progress of science will  always means the progress of the all scientific researches on all fields .
+
+**Link of Work:** [ANN-1](https://goo.gl/Ul4mxW)

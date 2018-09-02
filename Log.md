@@ -406,3 +406,11 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 **Thoughts** : ANN have been introduced in 1943 , but still we haven't come to half of its successful development. It is the proof of progress in Science can't be on a particular field , progress of science will  always means the progress of the all scientific researches on all fields .
 
 **Link of Work:** [ANN-1](https://goo.gl/Ul4mxW)
+
+## Day 63 : Sep 2 , 2018
+
+**Today's Progress** : Learned about perceptrons , Logical computing with neurons .
+
+**Thoughts** : very good concepts.
+
+**Link of Work:** [ANN-2](https://github.com/LordSomen/100DaysOfML/commit/6d12cdfd737d883a52ba48b0bdcac00faaf4ea03)

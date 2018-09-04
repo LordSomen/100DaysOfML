@@ -414,3 +414,12 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 **Thoughts** : very good concepts.
 
 **Link of Work:** [ANN-2](https://github.com/LordSomen/100DaysOfML/commit/6d12cdfd737d883a52ba48b0bdcac00faaf4ea03)
+
+## Day 64,65 : Sep 3,Sep 4 , 2018
+
+**Today's Progress** : Learned about backpropagation .
+
+**Thoughts** : very good concepts.
+
+**Link of Work:** [ANN-3](https://www.youtube.com/watch?v=Ilg3gGewQ5U&t=633s)
+[ANN-4](https://www.youtube.com/watch?v=tIeHLnjs5U8&t=303s)

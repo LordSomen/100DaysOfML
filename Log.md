@@ -423,3 +423,11 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 
 **Link of Work:** [ANN-3](https://www.youtube.com/watch?v=Ilg3gGewQ5U&t=633s)
 [ANN-4](https://www.youtube.com/watch?v=tIeHLnjs5U8&t=303s)
+
+## Day 66,67,68,69,70 : Sep 5,Sep 6,Sep 7,Sep 8,Sep 9 , 2018
+
+**Today's Progress** : I was learning and revising the Calculas .
+
+**Thoughts** : learned a lot.
+
+**Link of Work:** [Calculas](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)

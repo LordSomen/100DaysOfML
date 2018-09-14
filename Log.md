@@ -431,3 +431,11 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 **Thoughts** : learned a lot.
 
 **Link of Work:** [Calculas](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
+
+## Day 71,72,73,74,75 : Sep 11,Sep 12,Sep 13,Sep 14,Sep 15 , 2018
+
+**Today's Progress** : Not done much but , was doing the move 37 course these days .
+
+**Thoughts** : it is a good course no doubt.
+
+

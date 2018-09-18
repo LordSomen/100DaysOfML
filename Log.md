@@ -438,7 +438,7 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 
 **Thoughts** : it is a good course no doubt.
 
-## Day 76,77,78,79 : Sep 16,Sep 17,Sep 18, 2018
+## Day 76,77,78 : Sep 16,Sep 17,Sep 18, 2018
 
 **Today's Progress** : Completed Move37 weeek 1 .
 

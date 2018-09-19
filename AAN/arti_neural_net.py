@@ -11,4 +11,8 @@ per_clf = Perceptron()
 per_clf.fit(X,Y)
 
 y_pred = per_clf.predict([[2,0.5]])
-print(y_pred)
+print(y_pred) 
+
+#%%
+import tensorflow as tf
+

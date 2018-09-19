@@ -444,4 +444,11 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 
 **Thoughts** : it is a good course no doubt.
 
+## Day 79 : Sep 19 , 2018
+
+**Today's Progress** : Revised the concepts of perceptrons , Sigmoid , ReLU , LTU , MLP.
+
+**Thoughts** : Revising make the concepts clear.
+
+
 

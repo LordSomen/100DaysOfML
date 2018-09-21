@@ -450,5 +450,15 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 
 **Thoughts** : Revising make the concepts clear.
 
+## Day 80,81 : Sep 20,21 , 2018
+
+**Today's Progress** : Read the famous paper Anybody can dance .
+
+**Thoughts** : Awesome paper , great work in progress of AI .
+
+**Link of Work:** [Any Body Can Dance](https://arxiv.org/abs/1808.07371)
+
+
+
 
 

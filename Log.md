@@ -424,7 +424,7 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 **Link of Work:** [ANN-3](https://www.youtube.com/watch?v=Ilg3gGewQ5U&t=633s)
 [ANN-4](https://www.youtube.com/watch?v=tIeHLnjs5U8&t=303s)
 
-## Day 66,67,68,69,70 : Sep 5,Sep 6,Sep 7,Sep 8,Sep 9 , 2018
+## Day 66,67,68,69,70 : Sep 5,Sep 6,Sep 7,Sep 8,Sep 9 ,Sep 10 2018
 
 **Today's Progress** : I was learning and revising the Calculas .
 
@@ -457,6 +457,13 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 **Thoughts** : Awesome paper , great work in progress of AI .
 
 **Link of Work:** [Any Body Can Dance](https://arxiv.org/abs/1808.07371)
+
+## Day 82,83 : Sep 22,23 , 2018
+
+**Today's Progress** : I was revising topics like Gradient Descent , Linear Regression , Logistic regression etc.
+
+**Thoughts** : revising make concepts more clearer.
+
 
 
 

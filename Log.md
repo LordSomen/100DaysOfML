@@ -464,6 +464,12 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 
 **Thoughts** : revising make concepts more clearer.
 
+## Day 84 : Sep 24 , 2018
+
+**Today's Progress** : Doing Move 37 2nd week.
+
+**Thoughts** : very good concepts.
+
 
 
 

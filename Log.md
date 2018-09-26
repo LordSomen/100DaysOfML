@@ -470,6 +470,12 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 
 **Thoughts** : very good concepts.
 
+## Day 85,86 : Sep 25 , 26 , 2018
+
+**Today's Progress** : Done Move 37's  advanced bellman and Dynamic equation .
+
+**Thoughts** : very good concepts .
+
 
 
 

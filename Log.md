@@ -476,6 +476,14 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 
 **Thoughts** : very good concepts .
 
+## Day 87 : Oct 11 , 2018
+
+**Today's Progress** : Implemented Multilayer Neural network using tensorflow deep neural network.
+
+**Thoughts** : The performance is really great.
+
+**Link of Work:** [Commit](https://github.com/LordSomen/100DaysOfML/commit/2cacb6a35d4d1bda7ff71819d0f22c7302e694b7)
+
 
 
 

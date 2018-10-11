@@ -48,3 +48,40 @@ test_input_fn = tf.estimator.inputs.numpy_input_fn(
 eval_results = dnn_clf.evaluate(input_fn=test_input_fn)
 
 print(eval_results)
+
+#%%
+import tensorflow as tf
+n_inputs = 28*28
+n_hidden1 = 300
+n_hidden2 = 100
+n_outputs = 10
+
+#%%
+X = tf.placeholder(tf.float32, shape=(None, n_inputs), name="X")
+Y = tf.placeholder(tf.int64, shape=(None), name="Y")
+
+#%%
+def logit(z):
+    return 1 / (1 + np.exp(-z))
+
+def relu(z):
+    return np.maximum(0, z)
+
+#%%
+
+def neuron_layer(X,n_neurons,name,activation=None):
+    with tf.name_scope(name):
+        n_inputs = int(X.get_shape()[1])
+        stddev = 2 / np.sqrt(n_inputs)
+        init = tf.truncated_normal((n_inputs,n_neurons),stddev=stddev)
+        W = tf.Variable(init,name="kernel")
+        b = tf.Variable(tf.zeros([n_neurons]),name="bias")
+        Z = tf.matmul(X,W) + b
+        if activation is not None:
+            return activation(Z)
+        else:
+            return Z
+
+#%%
+
+

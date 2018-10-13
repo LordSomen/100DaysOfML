@@ -18,6 +18,7 @@ print(y_pred)
 import tensorflow as tf
 
 (X_train , Y_train) , (X_test,Y_test) = tf.keras.datasets.mnist.load_data()
+print(X_test)
 print(X_train.shape,X_test.shape)
 X_train = X_train.astype(np.float32).reshape(-1,28*28)/255.0
 X_test = X_test.astype(np.float32).reshape(-1,28*28)/255.0
@@ -32,6 +33,11 @@ print(X_train)
 #%%
 feature_cols = [tf.feature_column.numeric_column(
     "X",shape=[28*28])]
+
+print(feature_cols)
+
+#%%
+
 dnn_clf = tf.estimator.DNNClassifier(hidden_units=
 [300,100],n_classes = 10,feature_columns = feature_cols)
 
@@ -50,7 +56,6 @@ eval_results = dnn_clf.evaluate(input_fn=test_input_fn)
 print(eval_results)
 
 #%%
-import tensorflow as tf
 n_inputs = 28*28
 n_hidden1 = 300
 n_hidden2 = 100

@@ -36,8 +36,6 @@ feature_cols = [tf.feature_column.numeric_column(
 
 print(feature_cols)
 
-#%%
-
 dnn_clf = tf.estimator.DNNClassifier(hidden_units=
 [300,100],n_classes = 10,feature_columns = feature_cols)
 
@@ -123,6 +121,44 @@ init = tf.global_variables_initializer()
 saver = tf.train.Saver()
 
 #%%
+n_epochs = 40
+batch_size = 50
+
+#%%
+
+def shuffle_batch(X,Y,batch_size):
+    rnd_idx = np.random.permutation(len(X))
+    n_batches = len(X)//batch_size
+    for batch_idx in np.array_split(rnd_idx,n_batches):
+        X_batch , Y_batch = X[batch_idx],Y[batch_idx]
+        yield X_batch , Y_batch
+
+#%%
+
+with tf.Session() as sess:
+    init.run()
+    for epoch in range(n_epochs):
+        for X_batch , Y_batch in shuffle_batch(X_train,Y_train,batch_size):
+            sess.run(training_op,feed_dict={X:X_batch , Y:Y_batch})
+        acc_batch = accuracy.eval(feed_dict={X:X_batch,Y:Y_batch})
+        acc_val = accuracy.eval(feed_dict={X:X_valid , Y:Y_valid})
+        print(epoch,"Batch accuracy:",acc_batch,"Val accuracy:",acc_val)
+    
+    save_path = saver.save(sess,"./my_model_final.ckpt")
+
+#%%
+
+with tf.Session() as sess:
+    saver.restore(sess,"./my_model_final.ckpt")
+    X_news_scaled = X_test[:20]
+    Z = logits.eval(feed_dict={X:X_news_scaled})
+    Y_pred = np.argmax(Z,axis=1)
+
+#%%
+
+print("Predicted classes:",Y_pred)
+print("Actual classes: ",Y_test[:20])
+
 
 
 

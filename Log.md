@@ -485,6 +485,18 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 **Link of Work:** [Commit](https://github.com/LordSomen/100DaysOfML/commit/2cacb6a35d4d1bda7ff71819d0f22c7302e694b7)
 
 
+## Day 88,89,90,91 : Oct 12,13,14,15 , 2018
+
+**Today's Progress** : I have implemented a custom deep neural network algorithm from scratch and trained it on the mnist dataset .
+
+**Thoughts** : It was a lot of learning.
+
+**Link of Work:** [Commit-1](https://github.com/LordSomen/100DaysOfML/commit/297181b5eee24df792ea9d9f942c3bb7fd36ae32) 
+[Commit-2](https://github.com/LordSomen/100DaysOfML/commit/40566987edc4de1478e396fbd5c8beb2c4582d1f)
+[Commit-3](https://github.com/LordSomen/100DaysOfML/commit/40566987edc4de1478e396fbd5c8beb2c4582d1f)
+
+
+
 
 
 

@@ -495,6 +495,16 @@ and not reducing it , training RandomForest clf on this 2 datasets .
 [Commit-2](https://github.com/LordSomen/100DaysOfML/commit/40566987edc4de1478e396fbd5c8beb2c4582d1f)
 [Commit-3](https://github.com/LordSomen/100DaysOfML/commit/40566987edc4de1478e396fbd5c8beb2c4582d1f)
 
+## Day 92,93 : Oct 25,26 , 2018
+
+**Today's Progress** : 1) Brain stormed some questions on Deep neural network.
+2) trying to get more accuracy than 98% , on the mnist dataset using DNN .  
+
+**Thoughts** : Still have to do more tunning and tweak of parameters.
+
+**Link of Work:** [Commit](https://github.com/LordSomen/100DaysOfML/commit/dfa07524c668dc5cfd9116261ab2af927dccd0a7)
+
+
 
 
 
